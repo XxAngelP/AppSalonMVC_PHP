@@ -1,0 +1,27 @@
+{
+  "name": "AppSalon",
+  "version": "1.0.0",
+  "description": "MVC",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/css",
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Angel Baez",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^10.4.1",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.77.3",
+    "sharp": "^0.33.4"
+  }
+}
