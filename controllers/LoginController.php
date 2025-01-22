@@ -8,6 +8,10 @@ use MVC\Router;
 
 class LoginController{
   public static function login(Router $router){
+    if(!isset($_SESSION)){
+      session_start();
+      session_destroy();
+    }
     
     $alertas = [];
 
@@ -27,7 +31,6 @@ class LoginController{
             $_SESSION['nombre'] = $usuario->nombre. " ". $usuario->apellido;
             $_SESSION['email'] = $usuario->email;
             $_SESSION['login'] = true;
-            $_SESSION['admin'] = 0;
 
             //Redireccionamiento
             if($usuario->admin === '1'){
