@@ -27,6 +27,7 @@ class LoginController{
             $_SESSION['nombre'] = $usuario->nombre. " ". $usuario->apellido;
             $_SESSION['email'] = $usuario->email;
             $_SESSION['login'] = true;
+            $_SESSION['admin'] = 0;
 
             //Redireccionamiento
             if($usuario->admin === '1'){
