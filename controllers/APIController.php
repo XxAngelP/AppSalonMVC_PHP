@@ -12,8 +12,6 @@ class APIController{
       session_start();
     }
 
-    isAdmin();
-
     $servicio = Servicio::all();
     echo json_encode($servicio);
   }

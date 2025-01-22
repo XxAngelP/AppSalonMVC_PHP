@@ -8,7 +8,6 @@ use MVC\Router;
 
 class LoginController{
   public static function login(Router $router){
-    session_destroy();
     
     $alertas = [];
 
